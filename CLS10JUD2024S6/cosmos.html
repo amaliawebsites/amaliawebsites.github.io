@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Gala Cosmos - Trecut</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+/* MAIN LAYOUT */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* LEFT PANEL */
+.left-card {
+    background: #ddd;
+    border-radius: 20px;
+    padding: 25px;
+    width: 55%;
+}
+
+.left-card h2 {
+    text-align: center;
+}
+
+.left-card p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* VIDEO */
+.video-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 80%;
+    border-radius: 5px;
+}
+
+/* RIGHT IMAGES */
+.right-side {
+    width: 40%;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Rotated positions */
+.img1 {
+    top: 20px;
+    left: 60px;
+    transform: rotate(-20deg);
+}
+
+.img2 {
+    top: 120px;
+    left: 0;
+    transform: rotate(-10deg);
+}
+
+.img3 {
+    top: 200px;
+    left: 140px;
+    transform: rotate(15deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- LEFT -->
+    <div class="left-card">
+        <h2>Suntem parte din Cosmos! Facem parte din Echipă!</h2>
+
+        <p>
+        În cea de-a șasea misiune, Gala-Cosmos Navy împreună cu membrii echipajului
+        vor expune elemente din trecut, prezent și viitor. Echipajul a explorat lumea
+        care ne înconjoară, nemărginită în timp și spațiu.
+        </p>
+
+        <div class="video-box">
+            <video controls>
+                <source src="film.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-side">
+        <img class="image img1" src="galaxie.jpg">
+        <img class="image img2" src="Spatiu.jpg">
+        <img class="image img3" src="viitor.jpg">
+    </div>
+
+</div>
+
+
+</body>
+</html>

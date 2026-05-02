@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+body{
+    background-color: lightgray;
+    text-align: center;
+}
+img{
+    width: 400px;
+    border-radius: 20px;
+}
+.gr1, .gr2{
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.gr2{
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(100px);}
+}
+.gr3{
+    animation-name: move1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move1{
+    0%{transform: translateX(100px);}
+    100%{transform: translateX(0px);}
+}
+        </style>
+    </head>
+    <body>
+        <div class="gr1">
+            <h1>Explorarea universului</h1>
+            <img src="Spatiu.jpg">
+        </div>
+        <hr>
+        <div class="gr3">
+            <h1>Internetul</h1>
+            <img src="viitor.jpg">
+        </div>
+        <hr>
+        <div class="gr2">
+            <h1>Undele gravitaționale</h1>
+            <img src="Unde.jpg">
+        </div>
+    </body>
+</html>

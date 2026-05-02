@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Gala Cosmos</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: lightblue;
+}
+
+/* Header */
+.header {
+    padding: 20px 40px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+/* Container gri */
+.content {
+    margin: 20px 40px;
+    height: 500px;
+    background: #aaa;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Zona iframe */
+.content iframe {
+    flex: 1;
+    border: none;
+}
+
+.navbar {
+    height: 60px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background: lightgray;
+    height: 40px;
+    color:black
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>GALA COSMOS</h1>
+    <p>Trecut, prezent, viitor</p>
+</div>
+
+<div class="content">
+    <iframe name="main" src="cosmos.html"></iframe>
+
+    <div class="navbar">
+        <a href="cosmos.html" target="main">START</a>
+        <a href="trecut.html" target="main">TRECUT</a>
+        <a href="prezent.html" target="main">PREZENT</a>
+        <a href="viitor.html" target="main">VIITOR</a>
+        <a href="inscriere.html" target="main">INSCRIERE</a>
+    </div>
+</div>
+
+</body>
+</html>
