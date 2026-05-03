@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+body{
+    background-color: cornflowerblue;
+}
+#t1{
+    animation:miscare 10s linear infinite; /* pentru a anima textul de copyright, astfel incat sa se miste de la dreapta la stanga ecranului */
+}
+@keyframes miscare{
+    from{transform: translateX(100%);} /* pentru a incepe animatia cu textul in afara ecranului, din partea dreapta */
+    to{transform: translateX(-100%);}/* pentru a termina animatia cu textul in afara ecranului, din partea stanga */
+}
+        </style>
+    </head>
+    <body>
+        <h1 id="t1">Copyright©ONTI2025</h1>
+    </body>
+</html>

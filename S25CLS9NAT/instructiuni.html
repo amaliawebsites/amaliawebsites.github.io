@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+#z1{ /* pentru a stiliza textul cu instructiunile jocului */
+    text-align: center;
+}
+
+#z2{ /* pentru a alinia tabelele unul langa altul */
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+
+table{ /* pentru a stiliza tabelele in general */  
+    width: 40%;
+    border-collapse: collapse;
+}
+
+th, td{ /* stilizarea tabelelor */
+    font-size: 40px;
+    border-bottom: 10px solid black;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="z1"> <h1>Instrucțiuni joc<br> Dacă vrei să te joci Circuit CLICKER, accesează meniul JOACĂ!.<br> Jocul constă în parcurgerea unui circuit cu trei porți logice în ordinea: poarta roșie ȘI, poarta albastră SAU, respectiv poarta verde SAU. Fiecare poartă are ieșirile posibile 1, respectiv 0, iar trecerea de la o poartă la următoarea se face prin alegerea unei singure ieșiri. Culorile ieșirilor sunt aceleași cu culorile porților. Dacă se selectează răspunsul greșit, atunci se revine la pagina de început.<br> Jocul se încheie cu succes, dacă au fost selectate răspunsurile corecte pentru toate cele trei porți logice. </h1> </div>
+
+<div id="z2">
+
+<!-- OR TABEL -->
+<table>
+<tr style="background-color: gray;">
+    <td>Intrare a</td>
+    <td>Intrare b</td>
+    <td>Intrarea a SAU b</td>
+    <td>Poarta logica SAU</td>
+</tr>
+<tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td rowspan="4"><img src="or.jpg"></td>
+</tr>
+<tr>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+</tr>
+</table>
+
+<!-- AND TABEL -->
+<table>
+<tr style="background-color: gray;">
+    <td>Intrare a</td>
+    <td>Intrare b</td>
+    <td>Intrarea a ȘI b</td>
+    <td>Poarta logica ȘI</td>
+</tr>
+<tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td rowspan="4"><img src="and.jpg"></td>
+</tr>
+<tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+</tr>
+</table>
+</div>
+<a href="z2.html" style="font-size: 50px;">Acasa</a> <!-- buton pentru a te intoarce la pagina principala -->
+</body>
+</html>
