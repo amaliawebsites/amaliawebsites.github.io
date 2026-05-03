@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Formular</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                text-align: center;
+                margin: 0; /* Elimină marginile implicite ale browserului */
+                background-color:#CBC3E3;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formular de contact</h1>
+        <form action="turnir@turnirulvoievozilor.ro" method="post">
+            <label for="name">Nume:</label><br>
+            <input type="text"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email"><br><br>
+
+            <label for="phone">Telefon:</label><br>
+            <input type="phone"><br><br>
+
+            <label for="date">Data nasterii:</label><br>
+            <input type="date"><br><br>
+
+            <label for="grade">Clasa:</label><br>
+            <select id="grade" name="grade">
+                <option value="a IX-a">a IX-a</option>
+                <option value="a X-a">a X-a</option>
+                <option value="a XI-a">a XI-a</option>
+                <option value="a XII-a">a XII-a</option>
+            </select><br><br>
+
+            <input type="submit" value="Trimite">
+        </form>
+    </body>
+</html>

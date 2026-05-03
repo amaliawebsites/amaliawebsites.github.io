@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { text-align: center; font-family: sans-serif; margin: 0; }
+        
+        #z2 { background: cornflowerblue; display: flex; justify-content: space-between; padding: 10px; }
+        #z2 a { background: pink; padding: 4px 10px; border-radius: 10px; text-decoration: none; color: #000; }
+
+        .galerie { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; width: 85%; margin: 20px auto; }
+
+        .poza { 
+            position: relative; /* Permite poziționarea absolută a imaginii în interiorul div-ului */
+            overflow: hidden; /* Ascunde orice parte a imaginii care depășește dimensiunile div-ului */
+        }
+
+        .poza img { 
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; /* Asigură că imaginea acoperă întregul div fără a distorsiona proporțiile */
+            border: 10px double blue; /* Adaugă o margine albastră dublă de 10px în jurul imaginii */
+            box-sizing: border-box; /* Include marginea în dimensiunile totale ale imaginii */
+            display: block; /* Elimină spațiul alb de sub imagine */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="galerie"> <!-- Container pentru galeria de imagini -->
+        <div class="poza"><img src="vlad_tepes.jpeg"></div>
+        <div class="poza"><img src="matei_basarab.jpeg"></div>
+        <div class="poza"><img src="mihai_viteazul.jpeg"></div>
+        <div class="poza"><img src="mircea_cel_batran.jpeg"></div>
+        <div class="poza"><img src="Neagoe_Basarab.jpg"></div>
+        <div class="poza"><img src="Radu-cel-Mare.jpg"></div>
+        <div class="poza"><img src="Radu_de_la_Afumati.jpg"></div>
+        <div class="poza"><img src="constantin_brancoveanu.jpeg"></div>
+        <div class="poza"><img src="Petru_Cercel.jpeg"></div>
+    </div>
+
+</body>
+</html>
