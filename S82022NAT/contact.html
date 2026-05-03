@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+form{
+    padding-left: 150px; /* pozitionare formular */
+    font-size: 40px; /* marime text */
+}
+body{
+    background-color: aquamarine;
+}
+        </style>
+    </head>
+    <body>
+        <form action="mailto:contact@example.com"> <!-- adresa de email pentru trimiterea formularului -->
+            <label for="nume">Nume:</label><br> <!-- eticheta pentru nume -->
+            <input type="text"><br><br>
+
+            <label for="prenume">Prenume:</label><br> <!-- eticheta pentru prenume -->
+            <input type="text"><br><br>
+
+            <label for="telefon">Telefon:</label><br> <!-- eticheta pentru numar de telefon -->
+            <input type="tel"><br><br>
+
+            <label for="data">Data:</label><br> <!-- eticheta pentru data -->
+            <input type="date"><br><br>
+
+            <label for="email">Email:</label><br> <!-- eticheta pentru adresa de email -->
+            <input type="email"><br><br>
+
+            <label for="message">Mesaj:</label><br> <!-- eticheta pentru mesaj -->
+            <textarea id="message"></textarea><br><br> <!-- caseta pentru introducerea mesajului -->
+
+            <input type="submit" value="Trimite"> <!-- buton pentru trimiterea formularului -->
+        </form>
+    </body>
+</html>

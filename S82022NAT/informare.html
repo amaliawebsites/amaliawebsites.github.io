@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0; /* Elimină marginile implicite ale paginii */
+}
+
+.row {
+    display: flex;  /* Creează un container flex pentru a alinia elementele pe orizontală */
+}
+
+.stanga, .dreapta { /* Stilizare pentru ambele coloane */
+    height: 100vh;
+    width: 50%;
+}
+
+.stanga {
+    background-color: lightblue; 
+}
+
+.dreapta {
+    background-color: lightgreen;
+}
+</style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="stanga">
+            <a href="Educatia ecologica.docx" target="main" style="font-size: 50px;">Educatia ecologica</a> <!-- Link către documentul educației ecologice -->
+        </div>
+        <div class="dreapta">
+            <img src="BE ECO.jpg" width="75%" style="display: block; margin: 0 auto;"> <!-- Imagine centrată în partea dreaptă -->
+        </div>
+    </div>
+</body>
+</html>
